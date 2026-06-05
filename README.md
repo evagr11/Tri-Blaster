@@ -54,6 +54,7 @@ Este proyecto fue desarrollado como parte de la asignatura de **Programación** 
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/>
   <img src="https://img.shields.io/badge/Status-Stable-brightgreen?style=for-the-badge" alt="Status Stable"/>
 </div>
+
 *   **Motor de Videojuego:** Unity
 *   **Lenguaje de Programación:** C#
 *   **Interfaz de Usuario (UI):** Unity UI (UGUI) y TextMeshPro
