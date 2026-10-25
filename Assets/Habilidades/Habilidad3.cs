@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Habilidad5 : Director
+public class Habilidad3 : Director
 {
     private float currentCooldown = 0f;
     [SerializeField] private ParticleSystem healingParticles;

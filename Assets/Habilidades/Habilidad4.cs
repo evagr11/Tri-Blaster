@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Habilidad6 : Director
+public class Habilidad4 : Director
 {
     private float currentCooldown = 0f;
     private GameStart gameStartScript;

@@ -3,19 +3,19 @@
 </div>
 
 <div align="center">
-  <a href="https://github.com/evagr11/Tri-Blaster">
-    <img src="https://img.shields.io/badge/Ver_Código-informational?style=for-the-badge&logo=github&logoColor=white&color=555" alt="Ver Código">
+  <a href="https://github.com/evagr11/Tri-Blaster" target="_blank">
+    <img src="https://img.shields.io/badge/Ver_Código-7C2D12?style=for-the-badge&logo=github&logoColor=white" alt="Ver Código">
   </a>
-  <a href="https://evagr11.github.io/Curriculum/proyectos/tri-blaster.html">
-    <img src="https://img.shields.io/badge/Ver_Web-orange?style=for-the-badge&logo=googlechrome&logoColor=white&color=F97316" alt="Ver Web">
+  <a href="https://evagr11.github.io/Curriculum/proyectos/tri-blaster.html" target="_blank">
+    <img src="https://img.shields.io/badge/Ver_Web-F97316?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver Web">
   </a>
-  <a href="https://evagr.itch.io/tri-blaster">
+  <a href="https://evagr.itch.io/tri-blaster" target="_blank">
     <img src="https://img.shields.io/badge/Ver_en_itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white" alt="Ver en itch.io">
   </a>
 </div>
 
-  <br>
-  
+<br>
+
 <div align="center">
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=18&duration=3500&pause=800&color=F97316&center=true&vCenter=true&width=600&lines=Desarrollado+con+Unity+y+C%23%3BSistema+de+habilidades+y+cooldowns%3BMec%C3%A1nica+de+apuntado+con+rat%C3%B3n%3BFeedback+visual+con+gradientes" alt="Typing SVG" /></a>
 </div>
@@ -24,7 +24,7 @@
 
 **Tri-Blaster** es un shooter arcade en 2D donde la supervivencia es clave. En este juego, controlas un triángulo central que **gira automáticamente para apuntar hacia el cursor del ratón**, creando una mecánica de juego fluida y muy intuitiva. El objetivo es simple: sobrevivir el mayor tiempo posible eliminando las hordas de enemigos que se acercan desde los bordes.
 
-Para defenderte, cuentas con un **arsenal estratégico de 4 habilidades**, cada una con su propio tiempo de recarga. La gestión de estos cooldowns, visualizados en la interfaz, es fundamental para dominar la partida y alcanzar una alta puntuación.
+Para defenderte, cuentas con un **arsenal estratégico de 5 habilidades**, cada una con su propio tiempo de recarga. La gestión de estos cooldowns, visualizados en la interfaz, es fundamental para dominar la partida y alcanzar una alta puntuación.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/62d2d937-66e2-4fa7-ad14-9a07a2d22204" alt="Mockup del juego" width="70%"/>
@@ -34,10 +34,39 @@ Para defenderte, cuentas con un **arsenal estratégico de 4 habilidades**, cada 
 ### ✨ Características principales:
 
 *   🎮 **Apuntado Intuitivo**: Controla la dirección de tus disparos moviendo el ratón. El jugador rota automáticamente para que solo te preocupes de apuntar y disparar.
-*   🤖 **Hordas de Enemigos**: Círculos enemigos aparecen constantemente desde los bordes de la pantalla y se dirigen hacia ti. ¡No dejes que te alcancen!
-*   💥 **Sistema de Habilidades**: Domina 4 habilidades únicas para atacar, defenderte o potenciarte. Cada una tiene un cooldown visual que deberás gestionar con estrategia.
+*   🤖 **Hordas de Enemigos**: Círculos enemigos aparecen sin parar (uno cada 0,2 s) desde cualquier punto de un anillo alrededor del jugador y van directos hacia ti.
+*   💥 **Sistema de Habilidades**: 5 habilidades para atacar, curarte o potenciarte, seleccionables con las teclas `1`-`5`. Cada una tiene un icono que se va rellenando mientras se recarga.
+*   🧩 **Arquitectura extensible**: Todas las habilidades heredan de la clase abstracta `Director` e implementan `Trigger()`, y `AbilityHolder` solo guarda una lista de ellas. Añadir una habilidad nueva es crear un script y arrastrarlo a la lista.
 *   🎨 **Feedback Visual Dinámico**: La vida, tanto del jugador como de los enemigos, se representa con gradientes de color que cambian en tiempo real según el daño, ofreciendo una lectura clara del estado del combate.
-*   🏆 **Puntuación y Rejugabilidad**: Acumula puntos por cada enemigo derrotado y compite por superar tu propio récord en cada partida.
+*   🏆 **Puntuación y Rejugabilidad**: Un punto por cada enemigo derrotado y resumen al morir. Con `R` empiezas otra partida al instante.
+
+### 🎮 Controles
+
+<div align="center">
+
+| Tecla | Acción |
+| :---: | :----- |
+| `Espacio` | Empezar la partida |
+| Ratón | Apuntar (el triángulo gira hacia el cursor) |
+| Clic izquierdo | Usar la habilidad seleccionada |
+| `1` - `5` | Elegir habilidad |
+| `R` | Reiniciar |
+
+</div>
+
+### 💥 Habilidades
+
+<div align="center">
+
+| Tecla | Habilidad | Recarga | Efecto |
+| :---: | :-------- | :-----: | :----- |
+| `1` | **Disparo rápido** | 0,5 s | Proyectil pequeño hacia donde apuntas |
+| `2` | **Disparo potente** | 2 s | Proyectil más grande |
+| `3` | **Curación instantánea** | 5 s | Recupera toda la vida |
+| `4` | **Curación** | 3 s | Multiplica por 5 la regeneración de vida durante 10 s |
+| `5` | **Aumento de fuerza** | 2 s | Duplica la fuerza durante 6 s: más daño y proyectiles más grandes |
+
+</div>
 
 | En plena batalla | Fin de la partida |
 | :---: | :---: |
@@ -55,10 +84,20 @@ Este proyecto fue desarrollado como parte de la asignatura de **Programación** 
   <img src="https://img.shields.io/badge/Status-Stable-brightgreen?style=for-the-badge" alt="Status Stable"/>
 </div>
 
-*   **Motor de Videojuego:** Unity
-*   **Lenguaje de Programación:** C#
-*   **Interfaz de Usuario (UI):** Unity UI (UGUI) y TextMeshPro
-*   **Control de Versiones:** Git y GitHub
+<br>
+
+<div align="center">
+
+| Área | Tecnología |
+| :--- | :--------- |
+| **Motor** | `Unity 2022.3 LTS` (2D) |
+| **Lenguaje** | `C#` |
+| **Arquitectura** | Clase abstracta `Director` para las habilidades, eventos (`GameEvents`) para inicio, muerte y puntuación |
+| **Interfaz** | `Unity UI` (iconos de recarga) y `TextMesh Pro` |
+| **Visual** | Gradientes de color para la vida y sistemas de partículas |
+| **Control de versiones** | `Git` y `GitHub` |
+
+</div>
 
 # 📂 Estructura del Proyecto
 
@@ -69,17 +108,24 @@ Tri-Blaster/
 ├── Assets/
 │   ├── Prefabs/          # Prefabs para enemigos, proyectiles, etc.
 │   ├── Scenes/           # Escena principal del juego (SampleScene.unity)
-│   ├── scripts/          # Lógica principal (Player, Enemy, Spawner, etc.)
-│   │   ├── Player.cs
-│   │   ├── Enemy.cs
-│   │   ├── HealthPlayer.cs
-│   │   ├── Spawner.cs
-│   │   └── Proyectil.cs
-│   ├── Habilidades/      # Scripts para las 4 habilidades del jugador
-│   │   ├── Habilidad1.cs
-│   │   ├── Habilidad2.cs
-│   │   ├── Habilidad3.cs
-│   │   └── Habilidad4.cs
+│   ├── scripts/
+│   │   ├── Player.cs            # Gira el triángulo hacia el ratón
+│   │   ├── AtributosJugador.cs  # Vida, fuerza y regeneración
+│   │   ├── HealthPlayer.cs      # Color según la vida, derrota y reinicio
+│   │   ├── Enemy.cs             # Movimiento hacia el jugador y daño
+│   │   ├── HealthEnemy.cs       # Vida y color del enemigo
+│   │   ├── Proyectil.cs         # Movimiento y daño del disparo
+│   │   ├── Spawner.cs           # Aparición de enemigos
+│   │   └── Score.cs             # Puntuación
+│   ├── Habilidades/
+│   │   ├── Habilidad1.cs        # Disparo (se usa dos veces con distinto tamaño y recarga)
+│   │   ├── Habilidad2.cs        # Curación instantánea
+│   │   ├── Habilidad3.cs        # Curación progresiva
+│   │   └── Habilidad4.cs        # Aumento de fuerza
+│   ├── Director.cs              # Clase base abstracta de las habilidades
+│   ├── AbilityHolder.cs         # Lista de habilidades, selección y uso
+│   ├── GameStart.cs             # Pantalla de inicio
+│   ├── GameEvents.cs            # Eventos del juego
 │   └── TextMesh Pro/     # Recursos para la UI de texto
 ├── Packages/
 │   └── manifest.json     # Dependencias del proyecto Unity
@@ -101,13 +147,15 @@ Para ejecutar este proyecto en tu entorno local, necesitarás tener instalado **
     *   Navega hasta la carpeta del repositorio recién clonado y selecciónala.
 
 3.  **Abre el Editor de Unity:**
-    *   Unity Hub podría pedirte que instales la versión del editor con la que se creó el proyecto. Se recomienda usar **Unity 2022.3 LTS** o una versión superior para asegurar la compatibilidad de los paquetes.
+    *   Unity Hub podría pedirte que instales la versión del editor con la que se creó el proyecto. El proyecto se creó con **Unity 2022.3.50f1 (LTS)**; cualquier 2022.3 sirve. Si solo quieres jugar, está [en itch.io](https://evagr.itch.io/tri-blaster).
     *   Una vez que el proyecto esté en tu lista, haz clic sobre él para abrirlo en el Editor de Unity.
 
 4.  **Ejecuta el juego:**
     *   En la ventana `Project`, navega a la carpeta `Assets/Scenes/`.
     *   Haz doble clic sobre el archivo `SampleScene.unity` para abrir la escena principal.
-    *   Presiona el botón **Play** ▶ en la parte superior del editor para iniciar el juego.
+    *   Presiona el botón **Play** ▶ en la parte superior del editor y pulsa `Espacio` para empezar.
+
+<br>
 
 <div align="center">
   <p>Creado por <strong>Eva Gallardo</strong></p>
