@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>Gira al jugador para que mire hacia el ratón.</summary>
 public class Player : MonoBehaviour
 {
     private GameObject gameStart;
     private GameStart startScript;
 
+    /// <summary>Gira al jugador mientras la partida está en marcha.</summary>
     void Update()
     {
         gameStart = GameObject.FindGameObjectWithTag("Start");
@@ -18,6 +20,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    /// <summary>Calcula el ángulo entre el jugador y el ratón y lo aplica a la rotación.</summary>
     private void HandleRotation()
     {
         Vector3 mousePosition = Input.mousePosition;

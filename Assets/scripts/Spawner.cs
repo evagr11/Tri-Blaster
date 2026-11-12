@@ -1,5 +1,6 @@
 using UnityEngine;
 
+/// <summary>Crea enemigos en un círculo alrededor del jugador cada <c>spawnInterval</c> segundos.</summary>
 public class Spawner : MonoBehaviour
 {
     private float spawnAngle;
@@ -13,6 +14,7 @@ public class Spawner : MonoBehaviour
     {
     }
 
+    /// <summary>Cuenta el tiempo y crea un enemigo cuando toca, si la partida está en marcha.</summary>
     private void Update()
     {
         gameController = GameObject.FindGameObjectWithTag("Start");
@@ -29,6 +31,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
+    /// <summary>Crea un enemigo en un ángulo al azar, a 10,29 unidades del centro.</summary>
     private void GenerateEnemy()
     {
         spawnAngle = Random.Range(0, 2 * Mathf.PI);

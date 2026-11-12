@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>Vida y fuerza del jugador. Durante la partida recupera vida cada medio segundo.</summary>
 public class AtributosJugador : MonoBehaviour
 {
     float timePassed = 0;
@@ -22,6 +23,7 @@ public class AtributosJugador : MonoBehaviour
     }
 
     // Update is called once per frame
+    /// <summary>Suma <c>upgradeHealing</c> a la vida cada medio segundo y no deja que la fuerza pase del máximo.</summary>
     void Update()
     {
         player = GameObject.FindGameObjectWithTag("Player");

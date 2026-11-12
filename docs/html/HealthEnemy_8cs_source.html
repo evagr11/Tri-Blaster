@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tri-Blaster: Archivo de código fuente HealthEnemy.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Tri-Blaster
+   </div>
+   <div id="projectbrief">Shooter 2D de oleadas con cuatro habilidades: disparo, curación, regeneración y fuerza.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('HealthEnemy_8cs_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">HealthEnemy.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="HealthEnemy_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classHealthEnemy.html">    6</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classHealthEnemy.html">HealthEnemy</a> : MonoBehaviour</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#af3a9be9201873476b759b4507c695fab">    8</a></span>    [SerializeField] <span class="keyword">private</span> SpriteRenderer <a class="code hl_variable" href="classHealthEnemy.html#af3a9be9201873476b759b4507c695fab">spriteRenderer</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#ade389255aa8074c1a851e8545ef1b068">    9</a></span>    [SerializeField] <span class="keyword">private</span> Gradient <a class="code hl_variable" href="classHealthEnemy.html#ade389255aa8074c1a851e8545ef1b068">healthGradient</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#ae477ce402791d1ecd3ae69a922f29398">   10</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classHealthEnemy.html#ae477ce402791d1ecd3ae69a922f29398">currentHealth</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#a28bf9a1e11381deec1448da3b67db7ce">   12</a></span>    [SerializeField] <span class="keyword">private</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classHealthEnemy.html#a28bf9a1e11381deec1448da3b67db7ce">maxHealthValue</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#af1dbfad1b3799d928eb9b3cd20fc8687">   13</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classHealthEnemy.html#af1dbfad1b3799d928eb9b3cd20fc8687">attackDamage</a> = 2;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#a340d117f60ba2b090fa7bcf0d1543fcb">   16</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthEnemy.html#a340d117f60ba2b090fa7bcf0d1543fcb">Start</a>()</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_variable" href="classHealthEnemy.html#ae477ce402791d1ecd3ae69a922f29398">currentHealth</a> = <a class="code hl_variable" href="classHealthEnemy.html#a28bf9a1e11381deec1448da3b67db7ce">maxHealthValue</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_function" href="classHealthEnemy.html#ad51ef8ef68d05ab9a82164b725209fc9">UpdateHealthIndicator</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#af1d55ea721500d067c67f18c3dec7370">   23</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthEnemy.html#af1d55ea721500d067c67f18c3dec7370">Update</a>()</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_function" href="classHealthEnemy.html#ad51ef8ef68d05ab9a82164b725209fc9">UpdateHealthIndicator</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classHealthEnemy.html#ae477ce402791d1ecd3ae69a922f29398">currentHealth</a> &lt;= 0)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            Destroy(gameObject);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <a class="code hl_function" href="classHealthEnemy.html#a2e2e2aaac22e3fa334ad1c907200fb97">TriggerDeathSequence</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#ad51ef8ef68d05ab9a82164b725209fc9">   35</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthEnemy.html#ad51ef8ef68d05ab9a82164b725209fc9">UpdateHealthIndicator</a>()</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        spriteRenderer.color = <a class="code hl_variable" href="classHealthEnemy.html#ade389255aa8074c1a851e8545ef1b068">healthGradient</a>.Evaluate(<a class="code hl_variable" href="classHealthEnemy.html#ae477ce402791d1ecd3ae69a922f29398">currentHealth</a> / <a class="code hl_variable" href="classHealthEnemy.html#a28bf9a1e11381deec1448da3b67db7ce">maxHealthValue</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classHealthEnemy.html#a2e2e2aaac22e3fa334ad1c907200fb97">   43</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthEnemy.html#a2e2e2aaac22e3fa334ad1c907200fb97">TriggerDeathSequence</a>()</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_class" href="classGameEvents.html">GameEvents</a>.<a class="code hl_variable" href="classGameEvents.html#a42d2d4ab68275af87e184aef18a5a58d">EnemyDied</a>.Invoke();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+</div>
+<div class="ttc" id="aclassGameEvents_html"><div class="ttname"><a href="classGameEvents.html">GameEvents</a></div><div class="ttdoc">Eventos estáticos del juego.</div><div class="ttdef"><b>Definition</b> <a href="GameEvents_8cs_source.html#l00008">GameEvents.cs:9</a></div></div>
+<div class="ttc" id="aclassGameEvents_html_a42d2d4ab68275af87e184aef18a5a58d"><div class="ttname"><a href="classGameEvents.html#a42d2d4ab68275af87e184aef18a5a58d">GameEvents.EnemyDied</a></div><div class="ttdeci">static UnityEvent EnemyDied</div><div class="ttdoc">Se lanza al matar a un enemigo.</div><div class="ttdef"><b>Definition</b> <a href="GameEvents_8cs_source.html#l00014">GameEvents.cs:14</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html"><div class="ttname"><a href="classHealthEnemy.html">HealthEnemy</a></div><div class="ttdoc">Vida del enemigo, que cambia de color según la que le queda.</div><div class="ttdef"><b>Definition</b> <a href="#l00006">HealthEnemy.cs:7</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_a28bf9a1e11381deec1448da3b67db7ce"><div class="ttname"><a href="classHealthEnemy.html#a28bf9a1e11381deec1448da3b67db7ce">HealthEnemy.maxHealthValue</a></div><div class="ttdeci">float maxHealthValue</div><div class="ttdoc">Vida que quita al jugador al chocar con él.</div><div class="ttdef"><b>Definition</b> <a href="#l00012">HealthEnemy.cs:12</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_a2e2e2aaac22e3fa334ad1c907200fb97"><div class="ttname"><a href="classHealthEnemy.html#a2e2e2aaac22e3fa334ad1c907200fb97">HealthEnemy.TriggerDeathSequence</a></div><div class="ttdeci">void TriggerDeathSequence()</div><div class="ttdoc">Lanza el evento de enemigo muerto.</div><div class="ttdef"><b>Definition</b> <a href="#l00043">HealthEnemy.cs:43</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_a340d117f60ba2b090fa7bcf0d1543fcb"><div class="ttname"><a href="classHealthEnemy.html#a340d117f60ba2b090fa7bcf0d1543fcb">HealthEnemy.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Empieza con la vida al máximo.</div><div class="ttdef"><b>Definition</b> <a href="#l00016">HealthEnemy.cs:16</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_ad51ef8ef68d05ab9a82164b725209fc9"><div class="ttname"><a href="classHealthEnemy.html#ad51ef8ef68d05ab9a82164b725209fc9">HealthEnemy.UpdateHealthIndicator</a></div><div class="ttdeci">void UpdateHealthIndicator()</div><div class="ttdoc">Pinta el enemigo con el color del degradado que corresponde a su vida.</div><div class="ttdef"><b>Definition</b> <a href="#l00035">HealthEnemy.cs:35</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_ade389255aa8074c1a851e8545ef1b068"><div class="ttname"><a href="classHealthEnemy.html#ade389255aa8074c1a851e8545ef1b068">HealthEnemy.healthGradient</a></div><div class="ttdeci">Gradient healthGradient</div><div class="ttdef"><b>Definition</b> <a href="#l00009">HealthEnemy.cs:9</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_ae477ce402791d1ecd3ae69a922f29398"><div class="ttname"><a href="classHealthEnemy.html#ae477ce402791d1ecd3ae69a922f29398">HealthEnemy.currentHealth</a></div><div class="ttdeci">float currentHealth</div><div class="ttdef"><b>Definition</b> <a href="#l00010">HealthEnemy.cs:10</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_af1d55ea721500d067c67f18c3dec7370"><div class="ttname"><a href="classHealthEnemy.html#af1d55ea721500d067c67f18c3dec7370">HealthEnemy.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">Actualiza el color y, si se queda sin vida, se destruye y avisa con GameEvents.EnemyDied.</div><div class="ttdef"><b>Definition</b> <a href="#l00023">HealthEnemy.cs:23</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_af1dbfad1b3799d928eb9b3cd20fc8687"><div class="ttname"><a href="classHealthEnemy.html#af1dbfad1b3799d928eb9b3cd20fc8687">HealthEnemy.attackDamage</a></div><div class="ttdeci">float attackDamage</div><div class="ttdef"><b>Definition</b> <a href="#l00013">HealthEnemy.cs:13</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_af3a9be9201873476b759b4507c695fab"><div class="ttname"><a href="classHealthEnemy.html#af3a9be9201873476b759b4507c695fab">HealthEnemy.spriteRenderer</a></div><div class="ttdeci">SpriteRenderer spriteRenderer</div><div class="ttdef"><b>Definition</b> <a href="#l00008">HealthEnemy.cs:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_4e4031975c47497b23cbe89635c7e700.html">scripts</a></li><li class="navelem"><a class="el" href="HealthEnemy_8cs.html">HealthEnemy.cs</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

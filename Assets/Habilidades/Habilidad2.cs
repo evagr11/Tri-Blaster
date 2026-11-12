@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>Curación: devuelve toda la vida al jugador.</summary>
 public class Habilidad2 : Director
 {
     private float currentCooldown = 0f;
@@ -10,6 +11,7 @@ public class Habilidad2 : Director
     private GameObject player;
     private AtributosJugador playerStats;
 
+    /// <summary>Va descontando el tiempo de espera y rellena el icono de la habilidad.</summary>
     private void FixedUpdate()
     {
         if (currentCooldown > 0f)
@@ -19,6 +21,7 @@ public class Habilidad2 : Director
         }
     }
 
+    /// <summary>Cura al jugador y enseña las partículas durante un segundo.</summary>
     public override void Trigger()
     {
         gameManager = GameObject.FindGameObjectWithTag("Start");
@@ -38,6 +41,7 @@ public class Habilidad2 : Director
         }
     }
 
+    /// <summary>Para las partículas de curación.</summary>
     private void StopHealingEffect()
     {
         healingEffect.Stop();

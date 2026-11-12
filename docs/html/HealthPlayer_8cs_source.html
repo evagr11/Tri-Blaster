@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tri-Blaster: Archivo de código fuente HealthPlayer.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Tri-Blaster
+   </div>
+   <div id="projectbrief">Shooter 2D de oleadas con cuatro habilidades: disparo, curación, regeneración y fuerza.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('HealthPlayer_8cs_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">HealthPlayer.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="HealthPlayer_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>TMPro;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>UnityEngine.SceneManagement;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classHealthPlayer.html">    8</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classHealthPlayer.html">HealthPlayer</a> : MonoBehaviour</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a224ddd294afce2f6d69357a07d5fc345">   10</a></span>    [SerializeField] <span class="keyword">private</span> ParticleSystem <a class="code hl_variable" href="classHealthPlayer.html#a224ddd294afce2f6d69357a07d5fc345">damageParticles</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a4cf6bcfae483930202bd5fd71159dff0">   11</a></span>    [SerializeField] <span class="keyword">private</span> SpriteRenderer <a class="code hl_variable" href="classHealthPlayer.html#a4cf6bcfae483930202bd5fd71159dff0">spriteRenderer</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a7fe080b8702b78041627a60c8e9fbe3d">   12</a></span>    [SerializeField] <span class="keyword">private</span> Gradient <a class="code hl_variable" href="classHealthPlayer.html#a7fe080b8702b78041627a60c8e9fbe3d">healthColor</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#ae587bfa998aed124804d3ad08a37700a">   13</a></span>    <span class="keyword">public</span> ParticleSystem <a class="code hl_variable" href="classHealthPlayer.html#ae587bfa998aed124804d3ad08a37700a">healthParticles</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">   14</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classAtributosJugador.html">AtributosJugador</a> <a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a57aea80e17d560b53d372c202cb4744b">   15</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classHealthEnemy.html">HealthEnemy</a> <a class="code hl_variable" href="classHealthPlayer.html#a57aea80e17d560b53d372c202cb4744b">enemyMovement</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a097e8426921709b2648ae36456cc6639">   17</a></span>    [SerializeField] <span class="keyword">private</span> <a class="code hl_class" href="classAbilityHolder.html">AbilityHolder</a> <a class="code hl_variable" href="classHealthPlayer.html#a097e8426921709b2648ae36456cc6639">player</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#aa6f18492d9dff638747940fdd820f728">   18</a></span>    <a class="code hl_class" href="classScore.html">Score</a> <a class="code hl_variable" href="classHealthPlayer.html#aa6f18492d9dff638747940fdd820f728">score</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#af9a5eb49272fa33efc1dbe135a5eb299">   19</a></span>    [SerializeField] GameObject <a class="code hl_variable" href="classHealthPlayer.html#af9a5eb49272fa33efc1dbe135a5eb299">defeatScreen</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#ab1b204e39057cba9e5dbf47a051a8c8e">   20</a></span>    [SerializeField] TMP_Text <a class="code hl_variable" href="classHealthPlayer.html#ab1b204e39057cba9e5dbf47a051a8c8e">finalText</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a4e25c812119027010b26e72188b184ba">   23</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthPlayer.html#a4e25c812119027010b26e72188b184ba">Start</a>()</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_variable" href="classHealthPlayer.html#aa6f18492d9dff638747940fdd820f728">score</a> = FindObjectOfType&lt;Score&gt;();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a> = GetComponent&lt;AtributosJugador&gt;();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        playerAttributesScript.health = <a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>.<a class="code hl_variable" href="classAtributosJugador.html#a0689acbee96332f98d940d70b86cab0e">maxHealth</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_function" href="classHealthPlayer.html#a06221400a50bfcd6f12240101ad127e7">UpdateHealthColor</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#acd3413071f22811837f7a662ce949633">   35</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthPlayer.html#acd3413071f22811837f7a662ce949633">Update</a>()</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> (Input.GetKeyDown(KeyCode.R))</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_function" href="classHealthPlayer.html#acec24390adb8561ca478ea6440990422">RestartGame</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>.<a class="code hl_variable" href="classAtributosJugador.html#ac2f9188bd5f9157e1e97c852bd3bff86">health</a> &gt; <a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>.<a class="code hl_variable" href="classAtributosJugador.html#a0689acbee96332f98d940d70b86cab0e">maxHealth</a>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            playerAttributesScript.health = <a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>.<a class="code hl_variable" href="classAtributosJugador.html#a0689acbee96332f98d940d70b86cab0e">maxHealth</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="classHealthPlayer.html#a06221400a50bfcd6f12240101ad127e7">UpdateHealthColor</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>.<a class="code hl_variable" href="classAtributosJugador.html#ac2f9188bd5f9157e1e97c852bd3bff86">health</a> &lt;= 0)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_class" href="classGameEvents.html">GameEvents</a>.<a class="code hl_variable" href="classGameEvents.html#aac8d7fa483e84292828bd3f973de2fd4">PlayerDied</a>.Invoke();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="classHealthPlayer.html#af9a5eb49272fa33efc1dbe135a5eb299">defeatScreen</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            player.enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            finalText.text = $<span class="stringliteral">&quot;You got {score.score} points.&quot;</span>; </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a06221400a50bfcd6f12240101ad127e7">   61</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthPlayer.html#a06221400a50bfcd6f12240101ad127e7">UpdateHealthColor</a>()</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        spriteRenderer.color = <a class="code hl_variable" href="classHealthPlayer.html#a7fe080b8702b78041627a60c8e9fbe3d">healthColor</a>.Evaluate(1f * <a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>.<a class="code hl_variable" href="classAtributosJugador.html#ac2f9188bd5f9157e1e97c852bd3bff86">health</a> / <a class="code hl_variable" href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a>.<a class="code hl_variable" href="classAtributosJugador.html#a0689acbee96332f98d940d70b86cab0e">maxHealth</a>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#acec24390adb8561ca478ea6440990422">   67</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthPlayer.html#acec24390adb8561ca478ea6440990422">RestartGame</a>()</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        SceneManager.LoadScene(<span class="stringliteral">&quot;SampleScene&quot;</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classHealthPlayer.html#a8ad19d5fa821453192eef59fce54fd85">   74</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHealthPlayer.html#a8ad19d5fa821453192eef59fce54fd85">OnCollisionEnter2D</a>(Collision2D collision)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">if</span> (collision.gameObject.CompareTag(<span class="stringliteral">&quot;Enemy&quot;</span>))</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="classHealthPlayer.html#a57aea80e17d560b53d372c202cb4744b">enemyMovement</a> = collision.gameObject.GetComponent&lt;<a class="code hl_class" href="classHealthEnemy.html">HealthEnemy</a>&gt;();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            playerAttributesScript.health -= <a class="code hl_variable" href="classHealthPlayer.html#a57aea80e17d560b53d372c202cb4744b">enemyMovement</a>.<a class="code hl_variable" href="classHealthEnemy.html#af1dbfad1b3799d928eb9b3cd20fc8687">attackDamage</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_variable" href="classHealthPlayer.html#a224ddd294afce2f6d69357a07d5fc345">damageParticles</a>.Play();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+</div>
+<div class="ttc" id="aclassAbilityHolder_html"><div class="ttname"><a href="classAbilityHolder.html">AbilityHolder</a></div><div class="ttdoc">Habilidades del jugador: se eligen con las teclas 1 a 5 y se usan con el clic izquierdo.</div><div class="ttdef"><b>Definition</b> <a href="AbilityHolder_8cs_source.html#l00006">AbilityHolder.cs:7</a></div></div>
+<div class="ttc" id="aclassAtributosJugador_html"><div class="ttname"><a href="classAtributosJugador.html">AtributosJugador</a></div><div class="ttdoc">Vida y fuerza del jugador. Durante la partida recupera vida cada medio segundo.</div><div class="ttdef"><b>Definition</b> <a href="AtributosJugador_8cs_source.html#l00006">AtributosJugador.cs:7</a></div></div>
+<div class="ttc" id="aclassAtributosJugador_html_a0689acbee96332f98d940d70b86cab0e"><div class="ttname"><a href="classAtributosJugador.html#a0689acbee96332f98d940d70b86cab0e">AtributosJugador.maxHealth</a></div><div class="ttdeci">float maxHealth</div><div class="ttdef"><b>Definition</b> <a href="AtributosJugador_8cs_source.html#l00010">AtributosJugador.cs:10</a></div></div>
+<div class="ttc" id="aclassAtributosJugador_html_ac2f9188bd5f9157e1e97c852bd3bff86"><div class="ttname"><a href="classAtributosJugador.html#ac2f9188bd5f9157e1e97c852bd3bff86">AtributosJugador.health</a></div><div class="ttdeci">float health</div><div class="ttdef"><b>Definition</b> <a href="AtributosJugador_8cs_source.html#l00009">AtributosJugador.cs:9</a></div></div>
+<div class="ttc" id="aclassGameEvents_html"><div class="ttname"><a href="classGameEvents.html">GameEvents</a></div><div class="ttdoc">Eventos estáticos del juego.</div><div class="ttdef"><b>Definition</b> <a href="GameEvents_8cs_source.html#l00008">GameEvents.cs:9</a></div></div>
+<div class="ttc" id="aclassGameEvents_html_aac8d7fa483e84292828bd3f973de2fd4"><div class="ttname"><a href="classGameEvents.html#aac8d7fa483e84292828bd3f973de2fd4">GameEvents.PlayerDied</a></div><div class="ttdeci">static UnityEvent PlayerDied</div><div class="ttdoc">Se lanza cuando el jugador se queda sin vida.</div><div class="ttdef"><b>Definition</b> <a href="GameEvents_8cs_source.html#l00012">GameEvents.cs:12</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html"><div class="ttname"><a href="classHealthEnemy.html">HealthEnemy</a></div><div class="ttdoc">Vida del enemigo, que cambia de color según la que le queda.</div><div class="ttdef"><b>Definition</b> <a href="HealthEnemy_8cs_source.html#l00006">HealthEnemy.cs:7</a></div></div>
+<div class="ttc" id="aclassHealthEnemy_html_af1dbfad1b3799d928eb9b3cd20fc8687"><div class="ttname"><a href="classHealthEnemy.html#af1dbfad1b3799d928eb9b3cd20fc8687">HealthEnemy.attackDamage</a></div><div class="ttdeci">float attackDamage</div><div class="ttdef"><b>Definition</b> <a href="HealthEnemy_8cs_source.html#l00013">HealthEnemy.cs:13</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html"><div class="ttname"><a href="classHealthPlayer.html">HealthPlayer</a></div><div class="ttdoc">Vida del jugador: color según la vida, daño al chocar con enemigos y pantalla de derrota.</div><div class="ttdef"><b>Definition</b> <a href="#l00008">HealthPlayer.cs:9</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a06221400a50bfcd6f12240101ad127e7"><div class="ttname"><a href="classHealthPlayer.html#a06221400a50bfcd6f12240101ad127e7">HealthPlayer.UpdateHealthColor</a></div><div class="ttdeci">void UpdateHealthColor()</div><div class="ttdoc">Pinta al jugador con el color del degradado que corresponde a su vida.</div><div class="ttdef"><b>Definition</b> <a href="#l00061">HealthPlayer.cs:61</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a097e8426921709b2648ae36456cc6639"><div class="ttname"><a href="classHealthPlayer.html#a097e8426921709b2648ae36456cc6639">HealthPlayer.player</a></div><div class="ttdeci">AbilityHolder player</div><div class="ttdef"><b>Definition</b> <a href="#l00017">HealthPlayer.cs:17</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a224ddd294afce2f6d69357a07d5fc345"><div class="ttname"><a href="classHealthPlayer.html#a224ddd294afce2f6d69357a07d5fc345">HealthPlayer.damageParticles</a></div><div class="ttdeci">ParticleSystem damageParticles</div><div class="ttdef"><b>Definition</b> <a href="#l00010">HealthPlayer.cs:10</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a4cf6bcfae483930202bd5fd71159dff0"><div class="ttname"><a href="classHealthPlayer.html#a4cf6bcfae483930202bd5fd71159dff0">HealthPlayer.spriteRenderer</a></div><div class="ttdeci">SpriteRenderer spriteRenderer</div><div class="ttdef"><b>Definition</b> <a href="#l00011">HealthPlayer.cs:11</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a4e25c812119027010b26e72188b184ba"><div class="ttname"><a href="classHealthPlayer.html#a4e25c812119027010b26e72188b184ba">HealthPlayer.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Empieza con la vida al máximo.</div><div class="ttdef"><b>Definition</b> <a href="#l00023">HealthPlayer.cs:23</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a57aea80e17d560b53d372c202cb4744b"><div class="ttname"><a href="classHealthPlayer.html#a57aea80e17d560b53d372c202cb4744b">HealthPlayer.enemyMovement</a></div><div class="ttdeci">HealthEnemy enemyMovement</div><div class="ttdef"><b>Definition</b> <a href="#l00015">HealthPlayer.cs:15</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a7fe080b8702b78041627a60c8e9fbe3d"><div class="ttname"><a href="classHealthPlayer.html#a7fe080b8702b78041627a60c8e9fbe3d">HealthPlayer.healthColor</a></div><div class="ttdeci">Gradient healthColor</div><div class="ttdef"><b>Definition</b> <a href="#l00012">HealthPlayer.cs:12</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_a8ad19d5fa821453192eef59fce54fd85"><div class="ttname"><a href="classHealthPlayer.html#a8ad19d5fa821453192eef59fce54fd85">HealthPlayer.OnCollisionEnter2D</a></div><div class="ttdeci">void OnCollisionEnter2D(Collision2D collision)</div><div class="ttdoc">Al chocar con un enemigo, resta su daño y enseña las partículas.</div><div class="ttdef"><b>Definition</b> <a href="#l00074">HealthPlayer.cs:74</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_aa6f18492d9dff638747940fdd820f728"><div class="ttname"><a href="classHealthPlayer.html#aa6f18492d9dff638747940fdd820f728">HealthPlayer.score</a></div><div class="ttdeci">Score score</div><div class="ttdef"><b>Definition</b> <a href="#l00018">HealthPlayer.cs:18</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_ab1b204e39057cba9e5dbf47a051a8c8e"><div class="ttname"><a href="classHealthPlayer.html#ab1b204e39057cba9e5dbf47a051a8c8e">HealthPlayer.finalText</a></div><div class="ttdeci">TMP_Text finalText</div><div class="ttdef"><b>Definition</b> <a href="#l00020">HealthPlayer.cs:20</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_acd3413071f22811837f7a662ce949633"><div class="ttname"><a href="classHealthPlayer.html#acd3413071f22811837f7a662ce949633">HealthPlayer.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">Reinicia con R, no deja pasar la vida del máximo y, si llega a 0, lanza GameEvents....</div><div class="ttdef"><b>Definition</b> <a href="#l00035">HealthPlayer.cs:35</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_acec24390adb8561ca478ea6440990422"><div class="ttname"><a href="classHealthPlayer.html#acec24390adb8561ca478ea6440990422">HealthPlayer.RestartGame</a></div><div class="ttdeci">void RestartGame()</div><div class="ttdoc">Vuelve a cargar la escena.</div><div class="ttdef"><b>Definition</b> <a href="#l00067">HealthPlayer.cs:67</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_ada15c19801653221b56e4d3011ee1e9e"><div class="ttname"><a href="classHealthPlayer.html#ada15c19801653221b56e4d3011ee1e9e">HealthPlayer.playerAttributesScript</a></div><div class="ttdeci">AtributosJugador playerAttributesScript</div><div class="ttdef"><b>Definition</b> <a href="#l00014">HealthPlayer.cs:14</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_ae587bfa998aed124804d3ad08a37700a"><div class="ttname"><a href="classHealthPlayer.html#ae587bfa998aed124804d3ad08a37700a">HealthPlayer.healthParticles</a></div><div class="ttdeci">ParticleSystem healthParticles</div><div class="ttdef"><b>Definition</b> <a href="#l00013">HealthPlayer.cs:13</a></div></div>
+<div class="ttc" id="aclassHealthPlayer_html_af9a5eb49272fa33efc1dbe135a5eb299"><div class="ttname"><a href="classHealthPlayer.html#af9a5eb49272fa33efc1dbe135a5eb299">HealthPlayer.defeatScreen</a></div><div class="ttdeci">GameObject defeatScreen</div><div class="ttdef"><b>Definition</b> <a href="#l00019">HealthPlayer.cs:19</a></div></div>
+<div class="ttc" id="aclassScore_html"><div class="ttname"><a href="classScore.html">Score</a></div><div class="ttdoc">Puntuación: un punto por enemigo muerto.</div><div class="ttdef"><b>Definition</b> <a href="Score_8cs_source.html#l00007">Score.cs:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_4e4031975c47497b23cbe89635c7e700.html">scripts</a></li><li class="navelem"><a class="el" href="HealthPlayer_8cs.html">HealthPlayer.cs</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

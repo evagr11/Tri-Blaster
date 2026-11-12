@@ -1,5 +1,6 @@
 using UnityEngine;
 
+/// <summary>Enemigo que va hacia el jugador; si el jugador ha muerto, se aleja.</summary>
 public class Enemy : MonoBehaviour
 {
     private Transform targetPosition;
@@ -8,6 +9,7 @@ public class Enemy : MonoBehaviour
     private AtributosJugador targetAttributes;
     [SerializeField] private float moveSpeed;
 
+    /// <summary>Mueve el enemigo hacia el jugador, o en sentido contrario si el jugador no tiene vida.</summary>
     private void Update()
     {
         target = GameObject.FindGameObjectWithTag("Player");
@@ -27,6 +29,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    /// <summary>Se destruye al chocar con el jugador.</summary>
+    /// <param name="collision">Datos del choque.</param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

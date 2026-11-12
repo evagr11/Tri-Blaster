@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tri-Blaster: Referencia de la clase HealthPlayer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Tri-Blaster
+   </div>
+   <div id="projectbrief">Shooter 2D de oleadas con cuatro habilidades: disparo, curación, regeneración y fuerza.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classHealthPlayer.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="classHealthPlayer-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase HealthPlayer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Vida del jugador: color según la vida, daño al chocar con enemigos y pantalla de derrota.  
+ <a href="#details">Más...</a></p>
+<div class="dynheader">
+Diagrama de herencia de HealthPlayer</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classHealthPlayer.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:acec24390adb8561ca478ea6440990422" id="r_acec24390adb8561ca478ea6440990422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec24390adb8561ca478ea6440990422">RestartGame</a> ()</td></tr>
+<tr class="memdesc:acec24390adb8561ca478ea6440990422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vuelve a cargar la escena.  <br /></td></tr>
+<tr class="separator:acec24390adb8561ca478ea6440990422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:ae587bfa998aed124804d3ad08a37700a" id="r_ae587bfa998aed124804d3ad08a37700a"><td class="memItemLeft" align="right" valign="top">ParticleSystem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae587bfa998aed124804d3ad08a37700a">healthParticles</a></td></tr>
+<tr class="separator:ae587bfa998aed124804d3ad08a37700a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a4e25c812119027010b26e72188b184ba" id="r_a4e25c812119027010b26e72188b184ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e25c812119027010b26e72188b184ba">Start</a> ()</td></tr>
+<tr class="memdesc:a4e25c812119027010b26e72188b184ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empieza con la vida al máximo.  <br /></td></tr>
+<tr class="separator:a4e25c812119027010b26e72188b184ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3413071f22811837f7a662ce949633" id="r_acd3413071f22811837f7a662ce949633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd3413071f22811837f7a662ce949633">Update</a> ()</td></tr>
+<tr class="memdesc:acd3413071f22811837f7a662ce949633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinicia con R, no deja pasar la vida del máximo y, si llega a 0, lanza <a class="el" href="classGameEvents.html#aac8d7fa483e84292828bd3f973de2fd4" title="Se lanza cuando el jugador se queda sin vida.">GameEvents.PlayerDied</a> y enseña la pantalla de derrota con los puntos.  <br /></td></tr>
+<tr class="separator:acd3413071f22811837f7a662ce949633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06221400a50bfcd6f12240101ad127e7" id="r_a06221400a50bfcd6f12240101ad127e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06221400a50bfcd6f12240101ad127e7">UpdateHealthColor</a> ()</td></tr>
+<tr class="memdesc:a06221400a50bfcd6f12240101ad127e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pinta al jugador con el color del degradado que corresponde a su vida.  <br /></td></tr>
+<tr class="separator:a06221400a50bfcd6f12240101ad127e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad19d5fa821453192eef59fce54fd85" id="r_a8ad19d5fa821453192eef59fce54fd85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ad19d5fa821453192eef59fce54fd85">OnCollisionEnter2D</a> (Collision2D collision)</td></tr>
+<tr class="memdesc:a8ad19d5fa821453192eef59fce54fd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Al chocar con un enemigo, resta su daño y enseña las partículas.  <br /></td></tr>
+<tr class="separator:a8ad19d5fa821453192eef59fce54fd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a224ddd294afce2f6d69357a07d5fc345" id="r_a224ddd294afce2f6d69357a07d5fc345"><td class="memItemLeft" align="right" valign="top">ParticleSystem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a224ddd294afce2f6d69357a07d5fc345">damageParticles</a></td></tr>
+<tr class="separator:a224ddd294afce2f6d69357a07d5fc345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf6bcfae483930202bd5fd71159dff0" id="r_a4cf6bcfae483930202bd5fd71159dff0"><td class="memItemLeft" align="right" valign="top">SpriteRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cf6bcfae483930202bd5fd71159dff0">spriteRenderer</a></td></tr>
+<tr class="separator:a4cf6bcfae483930202bd5fd71159dff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe080b8702b78041627a60c8e9fbe3d" id="r_a7fe080b8702b78041627a60c8e9fbe3d"><td class="memItemLeft" align="right" valign="top">Gradient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fe080b8702b78041627a60c8e9fbe3d">healthColor</a></td></tr>
+<tr class="separator:a7fe080b8702b78041627a60c8e9fbe3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada15c19801653221b56e4d3011ee1e9e" id="r_ada15c19801653221b56e4d3011ee1e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAtributosJugador.html">AtributosJugador</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada15c19801653221b56e4d3011ee1e9e">playerAttributesScript</a></td></tr>
+<tr class="separator:ada15c19801653221b56e4d3011ee1e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57aea80e17d560b53d372c202cb4744b" id="r_a57aea80e17d560b53d372c202cb4744b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHealthEnemy.html">HealthEnemy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57aea80e17d560b53d372c202cb4744b">enemyMovement</a></td></tr>
+<tr class="separator:a57aea80e17d560b53d372c202cb4744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097e8426921709b2648ae36456cc6639" id="r_a097e8426921709b2648ae36456cc6639"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbilityHolder.html">AbilityHolder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a097e8426921709b2648ae36456cc6639">player</a></td></tr>
+<tr class="separator:a097e8426921709b2648ae36456cc6639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f18492d9dff638747940fdd820f728" id="r_aa6f18492d9dff638747940fdd820f728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScore.html">Score</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6f18492d9dff638747940fdd820f728">score</a></td></tr>
+<tr class="separator:aa6f18492d9dff638747940fdd820f728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a5eb49272fa33efc1dbe135a5eb299" id="r_af9a5eb49272fa33efc1dbe135a5eb299"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a5eb49272fa33efc1dbe135a5eb299">defeatScreen</a></td></tr>
+<tr class="separator:af9a5eb49272fa33efc1dbe135a5eb299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b204e39057cba9e5dbf47a051a8c8e" id="r_ab1b204e39057cba9e5dbf47a051a8c8e"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1b204e39057cba9e5dbf47a051a8c8e">finalText</a></td></tr>
+<tr class="separator:ab1b204e39057cba9e5dbf47a051a8c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Vida del jugador: color según la vida, daño al chocar con enemigos y pantalla de derrota. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00008">8</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+</div><h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="a8ad19d5fa821453192eef59fce54fd85" name="a8ad19d5fa821453192eef59fce54fd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad19d5fa821453192eef59fce54fd85">&#9670;&#160;</a></span>OnCollisionEnter2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealthPlayer.OnCollisionEnter2D </td>
+          <td>(</td>
+          <td class="paramtype">Collision2D</td>          <td class="paramname"><span class="paramname"><em>collision</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Al chocar con un enemigo, resta su daño y enseña las partículas. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collision</td><td>Datos del choque.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00074">74</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="acec24390adb8561ca478ea6440990422" name="acec24390adb8561ca478ea6440990422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec24390adb8561ca478ea6440990422">&#9670;&#160;</a></span>RestartGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealthPlayer.RestartGame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vuelve a cargar la escena. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00067">67</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4e25c812119027010b26e72188b184ba" name="a4e25c812119027010b26e72188b184ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e25c812119027010b26e72188b184ba">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealthPlayer.Start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Empieza con la vida al máximo. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00023">23</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="acd3413071f22811837f7a662ce949633" name="acd3413071f22811837f7a662ce949633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd3413071f22811837f7a662ce949633">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealthPlayer.Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reinicia con R, no deja pasar la vida del máximo y, si llega a 0, lanza <a class="el" href="classGameEvents.html#aac8d7fa483e84292828bd3f973de2fd4" title="Se lanza cuando el jugador se queda sin vida.">GameEvents.PlayerDied</a> y enseña la pantalla de derrota con los puntos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00035">35</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a06221400a50bfcd6f12240101ad127e7" name="a06221400a50bfcd6f12240101ad127e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06221400a50bfcd6f12240101ad127e7">&#9670;&#160;</a></span>UpdateHealthColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealthPlayer.UpdateHealthColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pinta al jugador con el color del degradado que corresponde a su vida. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00061">61</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a224ddd294afce2f6d69357a07d5fc345" name="a224ddd294afce2f6d69357a07d5fc345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a224ddd294afce2f6d69357a07d5fc345">&#9670;&#160;</a></span>damageParticles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleSystem HealthPlayer.damageParticles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00010">10</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="af9a5eb49272fa33efc1dbe135a5eb299" name="af9a5eb49272fa33efc1dbe135a5eb299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a5eb49272fa33efc1dbe135a5eb299">&#9670;&#160;</a></span>defeatScreen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject HealthPlayer.defeatScreen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00019">19</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a57aea80e17d560b53d372c202cb4744b" name="a57aea80e17d560b53d372c202cb4744b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57aea80e17d560b53d372c202cb4744b">&#9670;&#160;</a></span>enemyMovement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHealthEnemy.html">HealthEnemy</a> HealthPlayer.enemyMovement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00015">15</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ab1b204e39057cba9e5dbf47a051a8c8e" name="ab1b204e39057cba9e5dbf47a051a8c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b204e39057cba9e5dbf47a051a8c8e">&#9670;&#160;</a></span>finalText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text HealthPlayer.finalText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00020">20</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a7fe080b8702b78041627a60c8e9fbe3d" name="a7fe080b8702b78041627a60c8e9fbe3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe080b8702b78041627a60c8e9fbe3d">&#9670;&#160;</a></span>healthColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Gradient HealthPlayer.healthColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00012">12</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae587bfa998aed124804d3ad08a37700a" name="ae587bfa998aed124804d3ad08a37700a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae587bfa998aed124804d3ad08a37700a">&#9670;&#160;</a></span>healthParticles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleSystem HealthPlayer.healthParticles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00013">13</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a097e8426921709b2648ae36456cc6639" name="a097e8426921709b2648ae36456cc6639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097e8426921709b2648ae36456cc6639">&#9670;&#160;</a></span>player</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAbilityHolder.html">AbilityHolder</a> HealthPlayer.player</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00017">17</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ada15c19801653221b56e4d3011ee1e9e" name="ada15c19801653221b56e4d3011ee1e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada15c19801653221b56e4d3011ee1e9e">&#9670;&#160;</a></span>playerAttributesScript</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAtributosJugador.html">AtributosJugador</a> HealthPlayer.playerAttributesScript</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00014">14</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa6f18492d9dff638747940fdd820f728" name="aa6f18492d9dff638747940fdd820f728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f18492d9dff638747940fdd820f728">&#9670;&#160;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScore.html">Score</a> HealthPlayer.score</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00018">18</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4cf6bcfae483930202bd5fd71159dff0" name="a4cf6bcfae483930202bd5fd71159dff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf6bcfae483930202bd5fd71159dff0">&#9670;&#160;</a></span>spriteRenderer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpriteRenderer HealthPlayer.spriteRenderer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="HealthPlayer_8cs_source.html#l00011">11</a> del archivo <a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li><a class="el" href="HealthPlayer_8cs_source.html">HealthPlayer.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classHealthPlayer.html">HealthPlayer</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

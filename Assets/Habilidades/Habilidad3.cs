@@ -1,5 +1,6 @@
 using UnityEngine;
 
+/// <summary>Regeneración: multiplica la curación por segundo durante 10 segundos.</summary>
 public class Habilidad3 : Director
 {
     private float currentCooldown = 0f;
@@ -10,6 +11,7 @@ public class Habilidad3 : Director
     private GameObject player;
     private AtributosJugador playerStats;
 
+    /// <summary>Va descontando el tiempo de espera y rellena el icono de la habilidad.</summary>
     private void FixedUpdate()
     {
         if (currentCooldown > 0f)
@@ -19,6 +21,7 @@ public class Habilidad3 : Director
         }
     }
 
+    /// <summary>Multiplica <c>upgradeHealing</c> por <c>healingMultiplier</c> y programa su vuelta a la normalidad.</summary>
     public override void Trigger()
     {
         gameManager = GameObject.FindGameObjectWithTag("Start");
@@ -38,6 +41,7 @@ public class Habilidad3 : Director
         }
     }
 
+    /// <summary>Devuelve la curación a su valor anterior.</summary>
     private void StopHealingBoost()
     {
         playerStats.upgradeHealing /= healingMultiplier;

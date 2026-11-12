@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>Disparo: lanza un proyectil hacia donde mira el jugador, más grande cuanta más fuerza tiene.</summary>
 public class Habilidad1 : Director
 {
     [SerializeField] private float scaleBase;
@@ -14,6 +15,7 @@ public class Habilidad1 : Director
     private Proyectil bulletBehavior;
     private AtributosJugador playerStats;
 
+    /// <summary>Va descontando el tiempo de espera y rellena el icono de la habilidad.</summary>
     private void FixedUpdate()
     {
         if (currentCooldown > 0f)
@@ -23,6 +25,7 @@ public class Habilidad1 : Director
         }
     }
 
+    /// <summary>Si la partida está en marcha y no hay que esperar, crea el proyectil y empieza la espera.</summary>
     public override void Trigger()
     {
         gameManager = GameObject.FindGameObjectWithTag("Start");

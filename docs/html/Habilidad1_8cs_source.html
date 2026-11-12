@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tri-Blaster: Archivo de código fuente Habilidad1.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Tri-Blaster
+   </div>
+   <div id="projectbrief">Shooter 2D de oleadas con cuatro habilidades: disparo, curación, regeneración y fuerza.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('Habilidad1_8cs_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Habilidad1.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Habilidad1_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>UnityEngine.UI;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classHabilidad1.html">    5</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classHabilidad1.html">Habilidad1</a> : <a class="code hl_class" href="classDirector.html">Director</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classHabilidad1.html#afa949dde9f35c0fc9d6c7458b147c7e8">    7</a></span>    [SerializeField] <span class="keyword">private</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classHabilidad1.html#afa949dde9f35c0fc9d6c7458b147c7e8">scaleBase</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classHabilidad1.html#a7f14d3281cf17492d57976b1f9fc7302">    8</a></span>    [SerializeField] <span class="keyword">private</span> Transform <a class="code hl_variable" href="classHabilidad1.html#a7f14d3281cf17492d57976b1f9fc7302">projectileSpawnPoint</a>;  </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classHabilidad1.html#aff3e739ef88e8c8a336a12d660121ce2">    9</a></span>    [SerializeField] <span class="keyword">private</span> GameObject <a class="code hl_variable" href="classHabilidad1.html#aff3e739ef88e8c8a336a12d660121ce2">projectileTemplate</a>;   </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">   10</a></span>    <span class="keyword">private</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">currentCooldown</a> = 0f;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classHabilidad1.html#a60b0dd6264a0142cfb732f309f9ecf17">   11</a></span>    <span class="keyword">private</span> GameObject <a class="code hl_variable" href="classHabilidad1.html#a60b0dd6264a0142cfb732f309f9ecf17">gameManager</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classHabilidad1.html#aa5d8feeedff717d703436639d781ea88">   12</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classGameStart.html">GameStart</a> <a class="code hl_variable" href="classHabilidad1.html#aa5d8feeedff717d703436639d781ea88">gameStartScript</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classHabilidad1.html#ae61f0bbf160d743814f1e4b8d8ea1db3">   13</a></span>    <span class="keyword">private</span> GameObject <a class="code hl_variable" href="classHabilidad1.html#ae61f0bbf160d743814f1e4b8d8ea1db3">player</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classHabilidad1.html#a099cf3823aa9cae3316b7b5662f15aa0">   14</a></span>    <span class="keyword">private</span> GameObject <a class="code hl_variable" href="classHabilidad1.html#a099cf3823aa9cae3316b7b5662f15aa0">spawnedBullet</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classHabilidad1.html#a83f340b7b294a52cd77ad1d851a887df">   15</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classProyectil.html">Proyectil</a> <a class="code hl_variable" href="classHabilidad1.html#a83f340b7b294a52cd77ad1d851a887df">bulletBehavior</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classHabilidad1.html#a48d6daf9f6a612330b920c38cee03867">   16</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classAtributosJugador.html">AtributosJugador</a> <a class="code hl_variable" href="classHabilidad1.html#a48d6daf9f6a612330b920c38cee03867">playerStats</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classHabilidad1.html#a2c34f02ccba7181db27801daa029f50c">   19</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHabilidad1.html#a2c34f02ccba7181db27801daa029f50c">FixedUpdate</a>()</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">currentCooldown</a> &gt; 0f)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">currentCooldown</a> -= Time.deltaTime;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            icon.fillAmount = 1 - (<a class="code hl_variable" href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">currentCooldown</a> / <a class="code hl_variable" href="classDirector.html#a93a7eb8c7e62334f0d8ed5af7b598315">cooldown</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classHabilidad1.html#abcfbbfb2c23d7538c0e74df721a903c7">   29</a></span>    <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classHabilidad1.html#abcfbbfb2c23d7538c0e74df721a903c7">Trigger</a>()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_variable" href="classHabilidad1.html#a60b0dd6264a0142cfb732f309f9ecf17">gameManager</a> = GameObject.FindGameObjectWithTag(<span class="stringliteral">&quot;Start&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_variable" href="classHabilidad1.html#aa5d8feeedff717d703436639d781ea88">gameStartScript</a> = <a class="code hl_variable" href="classHabilidad1.html#a60b0dd6264a0142cfb732f309f9ecf17">gameManager</a>.GetComponent&lt;<a class="code hl_class" href="classGameStart.html">GameStart</a>&gt;();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classHabilidad1.html#aa5d8feeedff717d703436639d781ea88">gameStartScript</a>.<a class="code hl_variable" href="classGameStart.html#a382975914714c617b2e1da46be85c49b">gameStarted</a> &amp;&amp; <a class="code hl_variable" href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">currentCooldown</a> &lt;= 0)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="classHabilidad1.html#ae61f0bbf160d743814f1e4b8d8ea1db3">player</a> = GameObject.FindGameObjectWithTag(<span class="stringliteral">&quot;Player&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="classHabilidad1.html#a099cf3823aa9cae3316b7b5662f15aa0">spawnedBullet</a> = Instantiate(<a class="code hl_variable" href="classHabilidad1.html#aff3e739ef88e8c8a336a12d660121ce2">projectileTemplate</a>, <a class="code hl_variable" href="classHabilidad1.html#a7f14d3281cf17492d57976b1f9fc7302">projectileSpawnPoint</a>.position, Quaternion.identity);  </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_variable" href="classHabilidad1.html#a83f340b7b294a52cd77ad1d851a887df">bulletBehavior</a> = <a class="code hl_variable" href="classHabilidad1.html#a099cf3823aa9cae3316b7b5662f15aa0">spawnedBullet</a>.GetComponent&lt;<a class="code hl_class" href="classProyectil.html">Proyectil</a>&gt;();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="classHabilidad1.html#a48d6daf9f6a612330b920c38cee03867">playerStats</a> = <a class="code hl_variable" href="classHabilidad1.html#ae61f0bbf160d743814f1e4b8d8ea1db3">player</a>.GetComponent&lt;<a class="code hl_class" href="classAtributosJugador.html">AtributosJugador</a>&gt;();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            Vector3 direction = <a class="code hl_variable" href="classHabilidad1.html#ae61f0bbf160d743814f1e4b8d8ea1db3">player</a>.transform.up;  </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            bulletBehavior.direction = direction; </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            spawnedBullet.transform.localScale = Vector3.one * (<a class="code hl_variable" href="classHabilidad1.html#afa949dde9f35c0fc9d6c7458b147c7e8">scaleBase</a> * <a class="code hl_variable" href="classHabilidad1.html#a48d6daf9f6a612330b920c38cee03867">playerStats</a>.<a class="code hl_variable" href="classAtributosJugador.html#a7dac56cf8fa552c16d048a2f881c6775">strength</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_variable" href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">currentCooldown</a> = <a class="code hl_variable" href="classDirector.html#a93a7eb8c7e62334f0d8ed5af7b598315">cooldown</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            icon.fillAmount = 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+</div>
+<div class="ttc" id="aclassAtributosJugador_html"><div class="ttname"><a href="classAtributosJugador.html">AtributosJugador</a></div><div class="ttdoc">Vida y fuerza del jugador. Durante la partida recupera vida cada medio segundo.</div><div class="ttdef"><b>Definition</b> <a href="AtributosJugador_8cs_source.html#l00006">AtributosJugador.cs:7</a></div></div>
+<div class="ttc" id="aclassAtributosJugador_html_a7dac56cf8fa552c16d048a2f881c6775"><div class="ttname"><a href="classAtributosJugador.html#a7dac56cf8fa552c16d048a2f881c6775">AtributosJugador.strength</a></div><div class="ttdeci">float strength</div><div class="ttdef"><b>Definition</b> <a href="AtributosJugador_8cs_source.html#l00011">AtributosJugador.cs:11</a></div></div>
+<div class="ttc" id="aclassDirector_html"><div class="ttname"><a href="classDirector.html">Director</a></div><div class="ttdoc">Clase base de las habilidades: nombre, icono y tiempo de espera. Cada habilidad (Habilidad1 a Habilid...</div><div class="ttdef"><b>Definition</b> <a href="Director_8cs_source.html#l00008">Director.cs:9</a></div></div>
+<div class="ttc" id="aclassDirector_html_a93a7eb8c7e62334f0d8ed5af7b598315"><div class="ttname"><a href="classDirector.html#a93a7eb8c7e62334f0d8ed5af7b598315">Director.cooldown</a></div><div class="ttdeci">float cooldown</div><div class="ttdef"><b>Definition</b> <a href="Director_8cs_source.html#l00012">Director.cs:12</a></div></div>
+<div class="ttc" id="aclassGameStart_html"><div class="ttname"><a href="classGameStart.html">GameStart</a></div><div class="ttdoc">Pantalla de inicio: espera a que se pulse Espacio para empezar la partida.</div><div class="ttdef"><b>Definition</b> <a href="GameStart_8cs_source.html#l00007">GameStart.cs:8</a></div></div>
+<div class="ttc" id="aclassGameStart_html_a382975914714c617b2e1da46be85c49b"><div class="ttname"><a href="classGameStart.html#a382975914714c617b2e1da46be85c49b">GameStart.gameStarted</a></div><div class="ttdeci">bool gameStarted</div><div class="ttdoc">Indica si la partida está en marcha.</div><div class="ttdef"><b>Definition</b> <a href="GameStart_8cs_source.html#l00010">GameStart.cs:10</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html"><div class="ttname"><a href="classHabilidad1.html">Habilidad1</a></div><div class="ttdoc">Disparo: lanza un proyectil hacia donde mira el jugador, más grande cuanta más fuerza tiene.</div><div class="ttdef"><b>Definition</b> <a href="#l00005">Habilidad1.cs:6</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_a099cf3823aa9cae3316b7b5662f15aa0"><div class="ttname"><a href="classHabilidad1.html#a099cf3823aa9cae3316b7b5662f15aa0">Habilidad1.spawnedBullet</a></div><div class="ttdeci">GameObject spawnedBullet</div><div class="ttdef"><b>Definition</b> <a href="#l00014">Habilidad1.cs:14</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_a2c34f02ccba7181db27801daa029f50c"><div class="ttname"><a href="classHabilidad1.html#a2c34f02ccba7181db27801daa029f50c">Habilidad1.FixedUpdate</a></div><div class="ttdeci">void FixedUpdate()</div><div class="ttdoc">Va descontando el tiempo de espera y rellena el icono de la habilidad.</div><div class="ttdef"><b>Definition</b> <a href="#l00019">Habilidad1.cs:19</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_a48d6daf9f6a612330b920c38cee03867"><div class="ttname"><a href="classHabilidad1.html#a48d6daf9f6a612330b920c38cee03867">Habilidad1.playerStats</a></div><div class="ttdeci">AtributosJugador playerStats</div><div class="ttdef"><b>Definition</b> <a href="#l00016">Habilidad1.cs:16</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_a60b0dd6264a0142cfb732f309f9ecf17"><div class="ttname"><a href="classHabilidad1.html#a60b0dd6264a0142cfb732f309f9ecf17">Habilidad1.gameManager</a></div><div class="ttdeci">GameObject gameManager</div><div class="ttdef"><b>Definition</b> <a href="#l00011">Habilidad1.cs:11</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_a7f14d3281cf17492d57976b1f9fc7302"><div class="ttname"><a href="classHabilidad1.html#a7f14d3281cf17492d57976b1f9fc7302">Habilidad1.projectileSpawnPoint</a></div><div class="ttdeci">Transform projectileSpawnPoint</div><div class="ttdef"><b>Definition</b> <a href="#l00008">Habilidad1.cs:8</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_a83f340b7b294a52cd77ad1d851a887df"><div class="ttname"><a href="classHabilidad1.html#a83f340b7b294a52cd77ad1d851a887df">Habilidad1.bulletBehavior</a></div><div class="ttdeci">Proyectil bulletBehavior</div><div class="ttdef"><b>Definition</b> <a href="#l00015">Habilidad1.cs:15</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_aa5d8feeedff717d703436639d781ea88"><div class="ttname"><a href="classHabilidad1.html#aa5d8feeedff717d703436639d781ea88">Habilidad1.gameStartScript</a></div><div class="ttdeci">GameStart gameStartScript</div><div class="ttdef"><b>Definition</b> <a href="#l00012">Habilidad1.cs:12</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_abcfbbfb2c23d7538c0e74df721a903c7"><div class="ttname"><a href="classHabilidad1.html#abcfbbfb2c23d7538c0e74df721a903c7">Habilidad1.Trigger</a></div><div class="ttdeci">override void Trigger()</div><div class="ttdoc">Si la partida está en marcha y no hay que esperar, crea el proyectil y empieza la espera.</div><div class="ttdef"><b>Definition</b> <a href="#l00029">Habilidad1.cs:29</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_ae589feb201f2c4022e4bd4e03f41dd19"><div class="ttname"><a href="classHabilidad1.html#ae589feb201f2c4022e4bd4e03f41dd19">Habilidad1.currentCooldown</a></div><div class="ttdeci">float currentCooldown</div><div class="ttdef"><b>Definition</b> <a href="#l00010">Habilidad1.cs:10</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_ae61f0bbf160d743814f1e4b8d8ea1db3"><div class="ttname"><a href="classHabilidad1.html#ae61f0bbf160d743814f1e4b8d8ea1db3">Habilidad1.player</a></div><div class="ttdeci">GameObject player</div><div class="ttdef"><b>Definition</b> <a href="#l00013">Habilidad1.cs:13</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_afa949dde9f35c0fc9d6c7458b147c7e8"><div class="ttname"><a href="classHabilidad1.html#afa949dde9f35c0fc9d6c7458b147c7e8">Habilidad1.scaleBase</a></div><div class="ttdeci">float scaleBase</div><div class="ttdef"><b>Definition</b> <a href="#l00007">Habilidad1.cs:7</a></div></div>
+<div class="ttc" id="aclassHabilidad1_html_aff3e739ef88e8c8a336a12d660121ce2"><div class="ttname"><a href="classHabilidad1.html#aff3e739ef88e8c8a336a12d660121ce2">Habilidad1.projectileTemplate</a></div><div class="ttdeci">GameObject projectileTemplate</div><div class="ttdef"><b>Definition</b> <a href="#l00009">Habilidad1.cs:9</a></div></div>
+<div class="ttc" id="aclassProyectil_html"><div class="ttname"><a href="classProyectil.html">Proyectil</a></div><div class="ttdoc">Proyectil que avanza en línea recta y daña a los enemigos.</div><div class="ttdef"><b>Definition</b> <a href="Proyectil_8cs_source.html#l00006">Proyectil.cs:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_d56b3040db0d5b404454ec1110216fac.html">Habilidades</a></li><li class="navelem"><a class="el" href="Habilidad1_8cs.html">Habilidad1.cs</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
