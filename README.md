@@ -8,6 +8,7 @@
   </a>
   <a href="https://evagr11.github.io/Tri-Blaster/" target="_blank">
     <img src="https://img.shields.io/badge/Documentación_(Doxygen)-7C2D12?style=for-the-badge&logo=doxygen&logoColor=white" alt="Documentación del código">
+  <a href="docs/Documentacion_Tri-Blaster.pdf" target="_blank"><img src="https://img.shields.io/badge/Documentación-7C2D12?style=for-the-badge&logo=latex&logoColor=white" alt="Documentación"></a>
   </a>
   <a href="https://evagr11.github.io/Curriculum/proyectos/tri-blaster.html" target="_blank">
     <img src="https://img.shields.io/badge/Ver_Web-F97316?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver Web">
