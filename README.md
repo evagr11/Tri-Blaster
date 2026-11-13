@@ -23,7 +23,7 @@
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=18&duration=3500&pause=800&color=F97316&center=true&vCenter=true&width=600&lines=Desarrollado+con+Unity+y+C%23%3BSistema+de+habilidades+y+cooldowns%3BMec%C3%A1nica+de+apuntado+con+rat%C3%B3n%3BFeedback+visual+con+gradientes" alt="Typing SVG" /></a>
 </div>
 
-# 🚀 Sobre el Proyecto
+# Sobre el Proyecto
 
 **Tri-Blaster** es un shooter arcade en 2D donde la supervivencia es clave. En este juego, controlas un triángulo central que **gira automáticamente para apuntar hacia el cursor del ratón**, creando una mecánica de juego fluida y muy intuitiva. El objetivo es simple: sobrevivir el mayor tiempo posible eliminando las hordas de enemigos que se acercan desde los bordes.
 
@@ -34,16 +34,16 @@ Para defenderte, cuentas con un **arsenal estratégico de 5 habilidades**, cada 
   <p><em>Mockup del juego</em></p>
 </div>
 
-### ✨ Características principales:
+### Características principales:
 
-*   🎮 **Apuntado Intuitivo**: Controla la dirección de tus disparos moviendo el ratón. El jugador rota automáticamente para que solo te preocupes de apuntar y disparar.
-*   🤖 **Hordas de Enemigos**: Círculos enemigos aparecen sin parar (uno cada 0,2 s) desde cualquier punto de un anillo alrededor del jugador y van directos hacia ti.
-*   💥 **Sistema de Habilidades**: 5 habilidades para atacar, curarte o potenciarte, seleccionables con las teclas `1`-`5`. Cada una tiene un icono que se va rellenando mientras se recarga.
-*   🧩 **Arquitectura extensible**: Todas las habilidades heredan de la clase abstracta `Director` e implementan `Trigger()`, y `AbilityHolder` solo guarda una lista de ellas. Añadir una habilidad nueva es crear un script y arrastrarlo a la lista.
-*   🎨 **Feedback Visual Dinámico**: La vida, tanto del jugador como de los enemigos, se representa con gradientes de color que cambian en tiempo real según el daño, ofreciendo una lectura clara del estado del combate.
-*   🏆 **Puntuación y Rejugabilidad**: Un punto por cada enemigo derrotado y resumen al morir. Con `R` empiezas otra partida al instante.
+*   **Apuntado Intuitivo**: Controla la dirección de tus disparos moviendo el ratón. El jugador rota automáticamente para que solo te preocupes de apuntar y disparar.
+*   **Hordas de Enemigos**: Círculos enemigos aparecen sin parar (uno cada 0,2 s) desde cualquier punto de un anillo alrededor del jugador y van directos hacia ti.
+*   **Sistema de Habilidades**: 5 habilidades para atacar, curarte o potenciarte, seleccionables con las teclas `1`-`5`. Cada una tiene un icono que se va rellenando mientras se recarga.
+*   **Arquitectura extensible**: Todas las habilidades heredan de la clase abstracta `Director` e implementan `Trigger()`, y `AbilityHolder` solo guarda una lista de ellas. Añadir una habilidad nueva es crear un script y arrastrarlo a la lista.
+*   **Feedback Visual Dinámico**: La vida, tanto del jugador como de los enemigos, se representa con gradientes de color que cambian en tiempo real según el daño, ofreciendo una lectura clara del estado del combate.
+*   **Puntuación y Rejugabilidad**: Un punto por cada enemigo derrotado y resumen al morir. Con `R` empiezas otra partida al instante.
 
-### 🎮 Controles
+### Controles
 
 <div align="center">
 
@@ -57,7 +57,7 @@ Para defenderte, cuentas con un **arsenal estratégico de 5 habilidades**, cada 
 
 </div>
 
-### 💥 Habilidades
+### Habilidades
 
 <div align="center">
 
@@ -76,11 +76,11 @@ Para defenderte, cuentas con un **arsenal estratégico de 5 habilidades**, cada 
 | <img src="https://github.com/user-attachments/assets/b8f1ff13-52e9-430b-8b6d-beeac2a0934c" alt="Partida en transcurso" width="100%"/> | <img src="https://github.com/user-attachments/assets/1173fdd7-59ee-465e-90ce-d650e53c5b1d" alt="Partida finalizada con resumen de estadisticas de puntos" width="100%"/> |
 | *Partida en transcurso.* | *Partida finalizada con resumen de estadísticas.* |
 
-# 🧠 Contexto del Proyecto
+# Contexto del Proyecto
 
 Este proyecto fue desarrollado como parte de la asignatura de **Programación** durante el primer año del Ciclo Formativo de Grado Superior en **Desarrollo de Aplicaciones Multiplataforma (DAM)**. Sirvió para aplicar conceptos fundamentales de programación orientada a objetos, gestión de estados y diseño de mecánicas de juego en un entorno práctico como Unity.
 
-# 🛠️ Stack Tecnológico
+# Stack Tecnológico
 <div align="center">
   <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity"/>
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"/>
@@ -102,7 +102,7 @@ Este proyecto fue desarrollado como parte de la asignatura de **Programación** 
 
 </div>
 
-# 📂 Estructura del Proyecto
+# Estructura del Proyecto
 
 La estructura del proyecto sigue las convenciones estándar de Unity para organizar los assets y scripts de manera lógica y escalable.
 
@@ -135,7 +135,7 @@ Tri-Blaster/
 └── ProjectSettings/      # Configuración del proyecto
 ```
 
-# 🚀 Cómo Utilizar el Proyecto
+# Cómo Utilizar el Proyecto
 
 Para ejecutar este proyecto en tu entorno local, necesitarás tener instalado **Unity Hub** y una versión compatible de **Unity Editor**.
 
